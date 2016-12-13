@@ -1,0 +1,101 @@
+roi_items:
+  - roi_id
+  #- starttime
+  #- endtime
+  - type
+  #- iarea
+  - lat
+  - lon
+
+predictor_map:
+
+    'TCUM_CLOUD': {
+        'states': [4],
+        'diffs': None,
+        'stats': ['count', 'mean', 'min', 'max', 'stddev']
+    }
+
+    'SMOIS0': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'WATERBODY': {
+        'states': [0],
+        'diffs': None,
+        'stats': ['count', 'mean', 'min', 'max', 'stddev']
+    }
+
+    'WINDCONV': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'NDVI': {
+        'states': [0],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'HTFL_RH': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'VGRD': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'UGRD': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'CAPE3': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'CAPE2': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'CAPE1': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'CAPE0': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'ELEV': {
+        'states': [0],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'LCT': {
+        'states': [0],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+
+    'TSOIL0': {
+        'states': [4],
+        'diffs': None,
+        'stats': [ 'mean', 'min', 'max', 'stddev']
+    }
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" background-color="#ffffff">
+
+<Parameters>
+  <Parameter name="bounds">-91.4282,28.6135,-80.8813,35.568</Parameter>
+  <Parameter name="center">-86.4294,32.4356,6</Parameter>
+  <Parameter name="format">png8</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="scale">1</Parameter>
+  <Parameter name="metatile">2</Parameter>
+  <Parameter name="id"><![CDATA[ci_test]]></Parameter>
+  <Parameter name="_updated">1461126182000</Parameter>
+  <Parameter name="name"><![CDATA[ci test]]></Parameter>
+  <Parameter name="tilejson"><![CDATA[2.0.0]]></Parameter>
+  <Parameter name="scheme"><![CDATA[xyz]]></Parameter>
+</Parameters>
+
+
+<Style name="states" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#594" stroke-width="0.5" />
+  </Rule>
+</Style>
+<Layer name="states"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>states</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ujjwal/Documents/MapBox/project/ci_test/layers/states/states.shp]]></Parameter>
+       <Parameter name="id"><![CDATA[states]]></Parameter>
+       <Parameter name="project"><![CDATA[ci_test]]></Parameter>
+       <Parameter name="srs"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="counties" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#594" stroke-width="0.2" />
+  </Rule>
+</Style>
+
+<Layer name="counties"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <StyleName>counties</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ujjwal/Documents/MapBox/project/ci_test/layers/counties/cb_2014_us_county_500k.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+</Map>

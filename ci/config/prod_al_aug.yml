@@ -1,0 +1,75 @@
+datafiles:
+  AHPS_DAILYPRECIP:
+    folder: AHPS_Precip_1day
+    wildcard: nws_precip_conus_*.nc
+  GOES_CLOUDTYPE:
+    folder: GOES
+    wildcard: 2014_080*_Archive_Day_Data/*_Archive_Time_Data/ConvCloud_Mask_preprocessed_t2.dat.gz
+  GTOPO30_ELEV:
+    folder: gtopo
+    wildcard: SE.tif
+  LIS:
+    folder: LIS
+    wildcard: 201408*/201408*.d01.grb
+  MODIS_LCT:
+    folder: modis_mcd
+    wildcard: MCD12Q1.*.hdf
+  MODIS_NDVI:
+    folder: mod13q1_ndvi
+    wildcard: MOD13Q1.*.hdf
+  MODIS_NDVI_TIF:
+    folder: ndvi
+    wildcard: "*.tif"
+  MODIS_LCT_TIF:
+    folder: lct
+    wildcard: "*.tif"
+  MRMS_MREFL:
+    folder: mrms/MREFL
+    wildcard: 201408*.netcdf.gz
+  RAP:
+    folder: RAP
+    wildcard: rap_130_201408*_000.grb2
+
+bbox:
+  se:
+    lats:
+      - 25
+      - 37
+    lons:
+      - -94.6
+      - -75
+  al:
+    lats:
+      - 30
+      - 35.1
+    lons:
+      - -88.6
+      - -84.82
+
+ci_lifetime_hours: 4
+ci_roi_radius: 20
+ci_threshold_dbz: 35
+
+bbox_name: al
+mask_name: alabama
+
+dbname: ci_prod_al_aug
+username: unarayan
+password: crvcrv11
+servername: localhost
+port: 5432
+datadir: /rhome/unarayan/data/aug07-09
+adminusername: unarayan
+adminpassword: crvcrv11
+
+logsql: False
+parallel: True
+nprocs: 3
+
+start_date: 2014-08-07 00:00:00
+end_date: 2014-08-10 00:00:00
+
+log_level: 'info'
+
+forecast_times:
+  - 2014-08-07 15:30:00

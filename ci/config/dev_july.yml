@@ -1,0 +1,83 @@
+datafiles:
+  AHPS_DAILYPRECIP:
+    folder: AHPS_Precip_1day
+    wildcard: nws_precip_conus_*23.nc
+  GOES_CLOUDTYPE:
+    folder: GOES
+    wildcard:
+      - 2014_0723_Archive_Day_Data/2014_0723_11*_Archive_Time_Data/ConvCloud_Mask_preprocessed_t2.dat.gz
+      - 2014_0723_Archive_Day_Data/2014_0723_12*_Archive_Time_Data/ConvCloud_Mask_preprocessed_t2.dat.gz
+      - 2014_0723_Archive_Day_Data/2014_0723_13*_Archive_Time_Data/ConvCloud_Mask_preprocessed_t2.dat.gz
+      - 2014_0723_Archive_Day_Data/2014_0723_14*_Archive_Time_Data/ConvCloud_Mask_preprocessed_t2.dat.gz
+      - 2014_0723_Archive_Day_Data/2014_0723_15*_Archive_Time_Data/ConvCloud_Mask_preprocessed_t2.dat.gz
+      - 2014_0723_Archive_Day_Data/2014_0723_16*_Archive_Time_Data/ConvCloud_Mask_preprocessed_t2.dat.gz
+  GTOPO30_ELEV:
+    folder: gtopo
+    wildcard: SE.tif
+  LIS:
+    folder: LIS
+    wildcard: fixed_20140723*.grb
+  MODIS_LCT:
+    folder: modis_mcd
+    wildcard: MCD12Q1.*.hdf
+  MODIS_NDVI:
+    folder: mod13q1_ndvi
+    wildcard: MOD13Q1.A2014193.*.hdf
+  MODIS_NDVI_TIF:
+    folder: ndvi
+    wildcard: "193*.tif"
+  MODIS_LCT_TIF:
+    folder: lct
+    wildcard: "*.tif"
+  MRMS_MREFL:
+    folder: mrms/MREFL
+    wildcard:
+      - 20140723-15*.netcdf.gz
+  RAP:
+    folder: RAP
+    wildcard: rap_130_20140723_*_000.grb2
+
+bbox:
+  se:
+    lats:
+      - 25
+      - 37
+    lons:
+      - -94.6
+      - -75
+  al:
+    lats:
+      - 30
+      - 35.1
+    lons:
+      - -88.6
+      - -84.82
+
+ci_lifetime_hours: 4
+ci_roi_radius: 20
+ci_threshold_dbz: 35
+
+bbox_name: al
+mask_name: alabama
+
+dbname: ci_prod_jul1
+
+username: postgres
+password: postgres
+servername: localhost
+port: 5432
+datadir: /home/ujjwal/essic/data/july22-24
+adminusername: postgres
+adminpassword: postgres
+
+logsql: False
+parallel: False
+nprocs: 4
+
+start_date: 2014-07-23 15:30:00
+end_date: 2014-07-23 16:00:00
+
+#start_date: 2014-07-23 05:00:00
+#end_date: 2014-07-25 00:00:00
+
+log_level: 'info'
